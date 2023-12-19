@@ -36,7 +36,6 @@ object "Database" {
             }
             
 
-
             /* ---------- calldata decoding functions ----------- */
             function selector() -> s {
                 s := div(calldataload(0), 0x100000000000000000000000000000000000000000000000000000000)
