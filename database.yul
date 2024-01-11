@@ -4,6 +4,7 @@ object "Database" {
         // Storage slot 0 is where the address of the contract owner is stored
         sstore(0, caller())
 
+
         // Deploy the contract
         datacopy(0, dataoffset("runtimeDB"), datasize("runtimeDB"))
         return(0, datasize("runtimeDB"))
